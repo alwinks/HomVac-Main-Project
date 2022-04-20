@@ -105,7 +105,7 @@
                                     out.println("No rows found");
                                 else
                                 {
-                                    while(rs2.next())
+                                    while(rs3.next())
                                     {
                                         out.println("<tr><td>"+rs3.getString("vaccination_date")+"</td>");
                                         out.println("<td>"+rs3.getString("vaccination_time")+"</td>");

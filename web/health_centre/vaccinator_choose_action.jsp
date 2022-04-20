@@ -13,7 +13,7 @@
         pst2.setString(2,request.getParameter("vaccination_time"));
         pst2.setString(3,request.getParameter("vaccination_id"));
         pst2.executeUpdate();
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("vaccinations.jsp");
     }
     else
     {
