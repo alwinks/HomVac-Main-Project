@@ -131,6 +131,13 @@
                 </li><!-- End Dashboard Nav -->
 
                 <li class="nav-item">
+                    <a class="nav-link" href="vaccinations.jsp">
+                        <i class="ri ri-medicine-bottle-line"></i>
+                        <span>Vaccinations</span>
+                    </a>
+                </li><!-- End Profile Page Nav -->
+
+                <li class="nav-item">
                     <a class="nav-link" href="profile.jsp">
                         <i class="bi bi-person"></i>
                         <span>Profile</span>

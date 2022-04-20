@@ -30,6 +30,7 @@
                                             out.println("<td>"+rs1.getString("vaccinator_certificate")+"</td>");
                                             out.println("<td>"+rs1.getString("health_centre_name")+"</td>");
                                             out.println("<td>"+rs1.getString("vaccinator_mobile")+"</td>");
+                                            out.println("<td>");
                             %>
                         <a title="Verify vaccinator" href="vaccinator_verify.jsp?vaccinator_id=<% out.println(rs1.getString("vaccinator_id")); %>" onclick="return confirm('Are you sure?')"><i class="ri ri-checkbox-circle-line"></i></a>
                             <%

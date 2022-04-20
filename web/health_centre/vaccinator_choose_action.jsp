@@ -15,4 +15,10 @@
         pst2.executeUpdate();
         response.sendRedirect("index.jsp");
     }
+    else
+    {
+%>
+<script>alert("Already choosed!");</script>
+<%
+    }
 %>

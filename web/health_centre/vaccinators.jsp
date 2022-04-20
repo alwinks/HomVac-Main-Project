@@ -76,7 +76,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Vaccinators pending Verification</h5>
+                    <h5 class="card-title">Vaccinators pending verification</h5>
                     <!-- Default Table -->
                     <table class="table">
                         <thead>
@@ -101,8 +101,9 @@
                                             out.println("<tr><td>"+rs3.getString("vaccinator_name")+"</td>");
                                             out.println("<td>"+rs3.getString("vaccinator_certificate")+"</td>");
                                             out.println("<td>"+rs3.getString("vaccinator_mobile")+"</td>");
+                                            out.println("<td>");
                             %>
-                        <a title="Verify vaccinator" href="vaccinator_verify.jsp?vaccinator_id=<% out.println(rs1.getString("vaccinator_id")); %>" onclick="return confirm('Are you sure?')"><i class="ri ri-checkbox-circle-line"></i></a>
+                        <a title="Verify vaccinator" href="vaccinator_verify.jsp?vaccinator_id=<% out.println(rs3.getString("vaccinator_id")); %>" onclick="return confirm('Are you sure?')"><i class="ri ri-checkbox-circle-line"></i></a>
                             <%
                                             out.println("</td></tr>");
                                         }
