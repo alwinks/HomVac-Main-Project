@@ -1,0 +1,19 @@
+{
+  "name": "Admin - HomVac",
+  "short_name": "Admin - HomVac",
+  "start_url": "index.jsp",
+  "theme_color": "#4154f1",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
