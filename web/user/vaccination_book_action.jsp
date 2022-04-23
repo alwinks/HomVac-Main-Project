@@ -32,13 +32,13 @@
                         ResultSet rs5=pst5.executeQuery();
                         if(rs5.next())
                         {
-                            PreparedStatement pst6=conn.prepareStatement("SELECT COUNT(vaccinator_id) AS vaccinators_booked FROM tbl_vaccination WHERE health_centre_id=? AND vaccination_date=?");
+                            PreparedStatement pst6=conn.prepareStatement("SELECT COUNT(vaccination_id) AS vaccinations_booked FROM tbl_vaccination WHERE health_centre_id=? AND vaccination_date=?");
                             pst6.setString(1,rs4.getString("health_centre_id"));
                             pst6.setString(2,request.getParameter("vaccination_date"));
                             ResultSet rs6=pst6.executeQuery();
                             if(rs6.next())
                             {
-                                if(Integer.parseInt(rs6.getString("vaccinators_booked")) <= Integer.parseInt(rs5.getString("vaccinators")))
+                                if(Integer.parseInt(rs6.getString("vaccinations_booked")) < Integer.parseInt(rs5.getString("vaccinators")))
                                 {
                                     PreparedStatement pst7=conn.prepareStatement("INSERT INTO tbl_vaccination(user_id,health_centre_id,member_id,address_id,vaccine_id,age_id,vaccination_date,vaccination_status) VALUES(?,?,?,?,?,?,?,'Pending')");
                                     pst7.setInt(1,(Integer)session.getAttribute("user_id"));

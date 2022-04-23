@@ -38,7 +38,7 @@
                                             out.println("<td>"+rs1.getString("vaccination_status")+"</td>");
                                             out.println("<td><a title='Reschedule vaccination' href='vaccination_reschedule.jsp?vaccination_id="+rs1.getString("vaccination_id")+"&vaccination_status="+rs1.getString("vaccination_status")+"'><i class='bi bi-calendar-event'></i></a>");
                             %>
-                        <a title="Cancel vaccination" href="vaccination_cancel.jsp?vaccination_id=<% out.println(rs1.getString("vaccination_id")); %>&vaccination_status=<% out.println(rs1.getString("vaccination_status")); %>" onclick="return confirm('Are you sure?')"><i class="bi bi-x-circle"></i></a>
+                        <a title="Cancel vaccination" href="vaccination_cancel.jsp?vaccination_id=<% out.println(rs1.getString("vaccination_id")); %>&vaccine_id=<% out.println(rs1.getString("vaccine_id")); %>&health_centre_id=<% out.println(rs1.getString("health_centre_id")); %>&vaccination_status=<% out.println(rs1.getString("vaccination_status")); %>" onclick="return confirm('Are you sure?')"><i class="bi bi-x-circle"></i></a>
                             <%
                                 out.println("</td></tr>");
                                         }

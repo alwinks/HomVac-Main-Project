@@ -11,6 +11,10 @@
                             String id=request.getParameter("vaccination_id");
                         %>
                         <input required name="vaccination_id" type="hidden" value="<% out.println(id); %>">
+                        <% 
+                            String date=request.getParameter("vaccination_date");
+                        %>
+                        <input required name="vaccination_date" type="hidden" value="<% out.println(date); %>">
                         <%
                             PreparedStatement pst1=conn.prepareStatement("SELECT * FROM tbl_vaccination INNER JOIN tbl_member ON tbl_vaccination.member_id=tbl_member.member_id INNER JOIN tbl_vaccine ON tbl_vaccination.vaccine_id=tbl_vaccine.vaccine_id WHERE vaccination_id=?");
                             pst1.setString(1,request.getParameter("vaccination_id"));

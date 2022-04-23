@@ -30,7 +30,7 @@
                                         out.println("<td>"+rs1.getString("vaccine_name")+"</td>");
                                         out.println("<td><a title='View vaccination details' href='vaccination_details.jsp?vaccination_id="+rs1.getString("vaccination_id")+"'><i class='bi bi-info-circle'></i></a>");
                                         out.println("<a title='View map' href='address_map.jsp?address_id="+rs1.getString("address_id")+"'><i class='ri ri-map-pin-line'></i></a>");
-                                        out.println("<a title='Choose vaccinator' href='vaccinator_choose.jsp?vaccination_id="+rs1.getString("vaccination_id")+"'><i class='ri ri-nurse-line'></i></a></td></tr>");
+                                        out.println("<a title='Choose vaccinator' href='vaccinator_choose.jsp?vaccination_id="+rs1.getString("vaccination_id")+"&vaccination_date="+rs1.getString("vaccination_date")+"'><i class='ri ri-nurse-line'></i></a></td></tr>");
                                     }
                                 }
                             %>
@@ -72,7 +72,11 @@
                                         out.println("<td>"+rs2.getString("vaccine_name")+"</td>");
                                         out.println("<td><a title='View vaccination details' href='vaccination_details.jsp?vaccination_id="+rs2.getString("vaccination_id")+"'><i class='bi bi-info-circle'></i></a>");
                                         out.println("<a title='View map' href='address_map.jsp?address_id="+rs2.getString("address_id")+"'><i class='ri ri-map-pin-line'></i></a>");
-                                        out.println("<a title='Edit' href='vaccinator_choose.jsp?vaccination_id="+rs2.getString("vaccination_id")+"'><i class='bi bi-pencil'></i></a></td></tr>");
+                                        out.println("<a title='Edit' href='vaccinator_choose.jsp?vaccination_id="+rs2.getString("vaccination_id")+"'><i class='bi bi-pencil'></i></a>");
+                            %>
+                        <a title="Cancel vaccination" href="vaccination_cancel.jsp?vaccination_id=<% out.println(rs2.getString("vaccination_id")); %>&vaccine_id=<% out.println(rs2.getString("vaccine_id")); %>" onclick="return confirm('Are you sure?')"><i class="bi bi-x-circle"></i></a>
+                            <%
+                                        out.println("</td></tr>");
                                     }
                                 }
                             %>
