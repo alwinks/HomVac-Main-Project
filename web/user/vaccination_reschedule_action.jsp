@@ -18,7 +18,7 @@
             ResultSet rs3=pst3.executeQuery();
             if(rs3.next())
             {
-                if(Integer.parseInt(rs3.getString("vaccinations_booked")) <= Integer.parseInt(rs2.getString("vaccinators")))
+                if(Integer.parseInt(rs3.getString("vaccinations_booked")) < Integer.parseInt(rs2.getString("vaccinators")))
                 {
                     PreparedStatement pst4=conn.prepareStatement("UPDATE tbl_vaccination SET vaccination_date=? WHERE vaccination_id=?");
                     pst4.setString(1,request.getParameter("vaccination_date"));
