@@ -74,7 +74,7 @@
                                         {
                                             out.println("<tr><td>"+rs2.getString("member_name")+"</td>");
                                             out.println("<td>"+rs2.getString("vaccine_name")+"</td>");
-                                            out.println("<td><a title='View vaccination details' href='vaccination_details.jsp?vaccination_id="+rs2.getString("vaccination_id")+"'><i class='bi bi-info-circle'></i></a></td></tr>");
+                                            out.println("<td><a title='Download certificate' href='certificate.jsp?vaccination_id="+rs2.getString("vaccination_id")+"'><i class='bi bi-download'></i></a></td></tr>");
                                         }
                                     }
                                 }
