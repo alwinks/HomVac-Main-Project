@@ -86,7 +86,7 @@ CREATE TABLE `tbl_age` (
   `age_day_no` int DEFAULT NULL,
   `age_status` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`age_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +95,7 @@ CREATE TABLE `tbl_age` (
 
 LOCK TABLES `tbl_age` WRITE;
 /*!40000 ALTER TABLE `tbl_age` DISABLE KEYS */;
-INSERT INTO `tbl_age` VALUES (1,'6 Weeks',42,'Active'),(2,'10 Weeks',70,'Active');
+INSERT INTO `tbl_age` VALUES (1,'6 Weeks',42,'Active'),(2,'10 Weeks',70,'Active'),(3,'Pregnant Mother',7670,'Active'),(4,'14 Weeks',98,'Active'),(5,'9 Months',274,'Active');
 /*!40000 ALTER TABLE `tbl_age` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -309,12 +309,12 @@ DROP TABLE IF EXISTS `tbl_vaccine`;
 CREATE TABLE `tbl_vaccine` (
   `vaccine_id` int NOT NULL AUTO_INCREMENT,
   `age_id` int DEFAULT NULL,
-  `vaccine_name` varchar(25) DEFAULT NULL,
+  `vaccine_name` varchar(50) DEFAULT NULL,
   `vaccine_status` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`vaccine_id`),
   KEY `age_id` (`age_id`),
   CONSTRAINT `tbl_vaccine_ibfk_1` FOREIGN KEY (`age_id`) REFERENCES `tbl_age` (`age_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -323,7 +323,7 @@ CREATE TABLE `tbl_vaccine` (
 
 LOCK TABLES `tbl_vaccine` WRITE;
 /*!40000 ALTER TABLE `tbl_vaccine` DISABLE KEYS */;
-INSERT INTO `tbl_vaccine` VALUES (1,1,'Oral Polio Vaccine-1','Active'),(2,1,'Pentavalent-1','Active'),(3,2,'Oral Polio Vaccine-2','Active');
+INSERT INTO `tbl_vaccine` VALUES (1,1,'Oral Polio Vaccine-1','Active'),(2,1,'Pentavalent-1','Active'),(3,2,'Oral Polio Vaccine-2','Active'),(4,3,'Tetanus & adult Diphtheria-1','Active'),(5,1,'Rotavirus Vaccine-1','Active'),(6,1,'Fractional dose of Inactivated Polio Vaccine-1','Active'),(7,2,'Pentavalent-2','Active'),(8,4,'Oral Polio Vaccine-3','Active'),(9,4,'Pentavalent-3','Active'),(10,4,'Fractional dose of Inactivated Polio Vaccine-2','Active'),(11,2,'Rotavirus Vaccine-2','Active'),(12,5,'Measles & Rubella (MR)-1','Active');
 /*!40000 ALTER TABLE `tbl_vaccine` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -336,4 +336,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-25 10:34:26
+-- Dump completed on 2022-05-02 11:54:30

@@ -16,7 +16,7 @@
                         </thead>
                         <tbody>
                             <%
-                                    PreparedStatement pst=conn.prepareStatement("SELECT * FROM tbl_age");
+                                    PreparedStatement pst=conn.prepareStatement("SELECT * FROM tbl_age ORDER BY age_day_no");
                                     ResultSet rs=pst.executeQuery();
                                     if(rs==null)
                                         out.println("No rows found");

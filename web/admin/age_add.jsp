@@ -4,7 +4,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Add Address</h5>
+                    <h5 class="card-title">Add Age Group</h5>
                     <!-- General Form Elements -->
                     <form action="age_add_action.jsp">
                         <div class="row mb-3">

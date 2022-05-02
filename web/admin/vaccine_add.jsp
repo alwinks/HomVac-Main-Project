@@ -19,7 +19,7 @@
                                 <select required name="age_id" class="form-select" aria-label="Default select example">
                                     <option disabled selected>Select age group</option>
                                     <%
-                                        PreparedStatement pst=conn.prepareStatement("SELECT * FROM tbl_age");
+                                        PreparedStatement pst=conn.prepareStatement("SELECT * FROM tbl_age ORDER BY age_day_no");
                                         ResultSet rs=pst.executeQuery();
                                         if(rs==null)
                                             out.println("<option disabled>No rows found</option>");

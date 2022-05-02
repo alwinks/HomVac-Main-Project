@@ -16,7 +16,7 @@
                         </thead>
                         <tbody>
                             <%
-                                    PreparedStatement pst=conn.prepareStatement("SELECT * FROM tbl_vaccine INNER JOIN tbl_age ON tbl_vaccine.age_id=tbl_age.age_id");
+                                    PreparedStatement pst=conn.prepareStatement("SELECT * FROM tbl_vaccine INNER JOIN tbl_age ON tbl_vaccine.age_id=tbl_age.age_id ORDER BY age_day_no");
                                     ResultSet rs=pst.executeQuery();
                                     if(rs==null)
                                         out.println("No rows found");
