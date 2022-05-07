@@ -100,6 +100,34 @@ INSERT INTO `tbl_age` VALUES (1,'6 Weeks',42,'Active'),(2,'10 Weeks',70,'Active'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tbl_feedback`
+--
+
+DROP TABLE IF EXISTS `tbl_feedback`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_feedback` (
+  `feedback_id` int NOT NULL AUTO_INCREMENT,
+  `vaccination_id` int DEFAULT NULL,
+  `feedback_desc` varchar(255) DEFAULT NULL,
+  `feedback_date` date DEFAULT NULL,
+  `feedback_status` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`feedback_id`),
+  KEY `vaccination_id` (`vaccination_id`),
+  CONSTRAINT `tbl_feedback_ibfk_1` FOREIGN KEY (`vaccination_id`) REFERENCES `tbl_vaccination` (`vaccination_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_feedback`
+--
+
+LOCK TABLES `tbl_feedback` WRITE;
+/*!40000 ALTER TABLE `tbl_feedback` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_feedback` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tbl_health_centre`
 --
 
@@ -179,7 +207,7 @@ CREATE TABLE `tbl_stock` (
   KEY `vaccine_id` (`vaccine_id`),
   CONSTRAINT `tbl_stock_ibfk_1` FOREIGN KEY (`health_centre_id`) REFERENCES `tbl_health_centre` (`health_centre_id`),
   CONSTRAINT `tbl_stock_ibfk_2` FOREIGN KEY (`vaccine_id`) REFERENCES `tbl_vaccine` (`vaccine_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +216,7 @@ CREATE TABLE `tbl_stock` (
 
 LOCK TABLES `tbl_stock` WRITE;
 /*!40000 ALTER TABLE `tbl_stock` DISABLE KEYS */;
-INSERT INTO `tbl_stock` VALUES (1,1,1,25,'Active'),(2,1,2,17,'Active'),(3,2,3,29,'Active'),(4,3,3,45,'Active'),(5,3,1,24,'Active');
+INSERT INTO `tbl_stock` VALUES (1,1,1,45,'Active'),(2,1,2,17,'Active'),(3,2,3,29,'Active'),(4,3,3,45,'Active'),(5,3,1,24,'Active'),(6,1,5,0,'Active');
 /*!40000 ALTER TABLE `tbl_stock` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -255,7 +283,7 @@ CREATE TABLE `tbl_vaccination` (
   CONSTRAINT `tbl_vaccination_ibfk_5` FOREIGN KEY (`health_centre_id`) REFERENCES `tbl_health_centre` (`health_centre_id`),
   CONSTRAINT `tbl_vaccination_ibfk_6` FOREIGN KEY (`age_id`) REFERENCES `tbl_age` (`age_id`),
   CONSTRAINT `tbl_vaccination_ibfk_7` FOREIGN KEY (`address_id`) REFERENCES `tbl_address` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -286,7 +314,7 @@ CREATE TABLE `tbl_vaccinator` (
   PRIMARY KEY (`vaccinator_id`),
   KEY `health_centre_id` (`health_centre_id`),
   CONSTRAINT `tbl_vaccinator_ibfk_1` FOREIGN KEY (`health_centre_id`) REFERENCES `tbl_health_centre` (`health_centre_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,7 +323,7 @@ CREATE TABLE `tbl_vaccinator` (
 
 LOCK TABLES `tbl_vaccinator` WRITE;
 /*!40000 ALTER TABLE `tbl_vaccinator` DISABLE KEYS */;
-INSERT INTO `tbl_vaccinator` VALUES (2,1,'Christina Berglund','HTS846856323','6543210987','7gG&7gG&','Verified by Admin'),(3,2,'Hanna Moos','HTS948571625','7654321098','8hH*8hH*','Verified by Admin'),(4,3,'Peter Franken','HTS914652036','9734256184','uU6_#gSa','Verified by Admin');
+INSERT INTO `tbl_vaccinator` VALUES (2,1,'Christina Berglund','HTS846856323','6543210987','7gG&7gG&','Verified by Admin'),(3,2,'Hanna Moos','HTS948571625','7654321098','8hH*8hH*','Verified by Admin'),(4,3,'Peter Franken','HTS914652036','9734256184','uU6_#gSa','Verified by Admin'),(5,1,'Eldho','Jdidhn58728','6434252943','1234','Verified by Admin');
 /*!40000 ALTER TABLE `tbl_vaccinator` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -336,4 +364,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-02 11:54:30
+-- Dump completed on 2022-05-07  9:24:44

@@ -145,6 +145,13 @@
                 </li><!-- End Book Vaccination Nav -->
 
                 <li class="nav-item">
+                    <a class="nav-link " href="feedbacks.jsp">
+                        <i class="ri ri-feedback-line"></i>
+                        <span>Feedbacks</span>
+                    </a>
+                </li><!-- End Book Vaccination Nav -->
+
+                <li class="nav-item">
                     <a class="nav-link" href="profile.jsp">
                         <i class="bi bi-person"></i>
                         <span>Profile</span>
