@@ -5,13 +5,16 @@
         <group>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/admin/age_add.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/user/feedback_action.jsp</file>
+            <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/index.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/user/vaccination_book_action.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/user/certificate.jsp</file>
+            <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/admin/vaccination_details.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/vaccinations.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/vaccinator_choose_action.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/admin/vaccine_add.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/admin/vaccines.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/vaccinator/vaccination_details.jsp</file>
+            <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/vaccinator/vaccinations.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/admin/vaccine_add_action.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/vaccine_add.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/user/address_add_action.jsp</file>

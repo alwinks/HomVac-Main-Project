@@ -111,8 +111,8 @@
                                 {
                                     while(rs3.next())
                                     {
-                                        out.println("<tr><td>"+rs3.getString("vaccination_date")+"</td>");
-                                        out.println("<td>"+rs3.getString("vaccination_time")+"</td>");
+                                        out.println("<tr><td>"+rs3.getString("vaccinated_date")+"</td>");
+                                        out.println("<td>"+rs3.getString("vaccinated_time")+"</td>");
                                         out.println("<td>"+rs3.getString("vaccinator_name")+"</td>");
                                         out.println("<td>"+rs3.getString("member_name")+"</td>");
                                         out.println("<td>"+rs3.getString("vaccine_name")+"</td>");

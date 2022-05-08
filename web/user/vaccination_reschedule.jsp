@@ -10,7 +10,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Choose Vaccinator</h5>
+                    <h5 class="card-title">Reschedule Vaccination</h5>
                     <!-- General Form Elements -->
                     <form action="vaccination_reschedule_action.jsp">
                         <%
