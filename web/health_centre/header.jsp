@@ -128,21 +128,21 @@
                         <i class="bi bi-grid"></i>
                         <span>Home</span>
                     </a>
-                </li><!-- End Dashboard Nav -->
+                </li><!-- End Home Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link " href="vaccinations.jsp">
                         <i class="bi bi-people"></i>
                         <span>Vaccinations</span>
                     </a>
-                </li><!-- End Book Vaccination Nav -->
+                </li><!-- End Vaccinations Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link " href="vaccines.jsp">
                         <i class="ri ri-medicine-bottle-line"></i>
                         <span>Vaccines</span>
                     </a>
-                </li><!-- End Book Vaccination Nav -->
+                </li><!-- End Vaccines Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link" href="profile.jsp">

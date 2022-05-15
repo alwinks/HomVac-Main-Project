@@ -1,1 +1,0 @@
-SELECT *, ( 3959 * acos( cos( radians(?) ) * cos( radians( health_centre_latitude ) ) * cos( radians( health_centre_longitude ) - radians(?) ) + sin( radians(?) ) * sin( radians( health_centre_latitude ) ) ) ) AS distance FROM tbl_health_centre HAVING distance < 5

@@ -128,28 +128,28 @@
                         <i class="bi bi-grid"></i>
                         <span>Home</span>
                     </a>
-                </li><!-- End Dashboard Nav -->
+                </li><!-- End Home Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link " href="vaccination_book.jsp">
                         <i class="bi bi-calendar-check"></i>
                         <span>Book Vaccination</span>
                     </a>
-                </li><!-- End Book Vaccination Nav -->
+                </li><!-- End Book Vaccination Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link " href="family.jsp">
                         <i class="bi bi-people"></i>
                         <span>Family</span>
                     </a>
-                </li><!-- End Book Vaccination Nav -->
+                </li><!-- End Family Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link " href="address.jsp">
                         <i class="bi bi-house"></i>
                         <span>Addresses</span>
                     </a>
-                </li><!-- End Book Vaccination Nav -->
+                </li><!-- End Addresses Page Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link" href="profile.jsp">
