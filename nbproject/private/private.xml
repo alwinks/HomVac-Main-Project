@@ -5,8 +5,11 @@
         <group>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/admin/header.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/header.jsp</file>
+            <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/stock_update.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/user/header.jsp</file>
+            <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/vaccinator/vaccinations.jsp</file>
             <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/vaccinator/header.jsp</file>
+            <file>file:/C:/apache-tomcat-10.1.0-M12/webapps/ROOT/HomVac/web/health_centre/vaccine_add.jsp</file>
         </group>
     </open-files>
 </project-private>

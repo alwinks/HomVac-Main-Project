@@ -10,7 +10,6 @@
                             <tr>
                                 <th scope="col">Name</th>
                                 <th scope="col">Vaccine</th>
-                                <th scope="col">Status</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -27,7 +26,6 @@
                                         {
                                             out.println("<tr><td>"+rs.getString("member_name")+"</td>");
                                             out.println("<td>"+rs.getString("vaccine_name")+"</td>");
-                                            out.println("<td>"+rs.getString("vaccination_status")+"</td>");
                                             out.println("<td><a title='View vaccination details' href='vaccination_details.jsp?vaccination_id="+rs.getString("vaccination_id")+"'><i class='bi bi-info-circle'></i></a>");
                                             out.println("<a title='View map' href='address_map.jsp?address_id="+rs.getString("address_id")+"'><i class='ri ri-map-pin-line'></i></a></td></tr>");
                                         }

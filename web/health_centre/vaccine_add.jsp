@@ -8,7 +8,7 @@
                     <!-- General Form Elements -->
                     <form action="vaccine_add_action.jsp">
                         <div class="row mb-3">
-                            <label for="vaccine_id" class="col-sm-2 col-form-label">Age Group</label>
+                            <label for="vaccine_id" class="col-sm-2 col-form-label">Vaccine</label>
                             <div class="col-sm-10">
                                 <select required name="vaccine_id" class="form-select" aria-label="Default select example">
                                     <option disabled selected>Select vaccine</option>
